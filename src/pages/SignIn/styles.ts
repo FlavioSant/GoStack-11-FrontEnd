@@ -35,22 +35,23 @@ export const AnimationContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 100%;
 
   animation: ${appearFromLeft} 1s;
 
   form {
-    width: 340px;
-    margin: 80px 0;
+    width: 70%;
+    margin: 6rem 0;
     text-align: center;
 
     h1 {
-      margin-bottom: 24px;
+      margin-bottom: 1rem;
     }
 
     a {
       color: #f4ede8;
       display: block;
-      margin-top: 24px;
+      margin-top: 1rem;
       text-decoration: none;
       transition: color 0.2s;
 
@@ -64,7 +65,7 @@ export const AnimationContainer = styled.div`
     display: flex;
     align-items: center;
     color: #ff9000;
-    margin-top: 24px;
+    margin-top: 1rem;
     text-decoration: none;
     transition: color 0.2s;
 
@@ -73,7 +74,7 @@ export const AnimationContainer = styled.div`
     }
 
     svg {
-      margin-right: 16px;
+      margin-right: 0.3rem;
     }
   }
 `;

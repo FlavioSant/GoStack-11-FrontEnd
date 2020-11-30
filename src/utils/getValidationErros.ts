@@ -4,7 +4,7 @@ interface Errors {
   [key: string]: string;
 }
 
-export default function getValidationErros(err: ValidationError): Errors {
+const getValidationErros = (err: ValidationError): Errors => {
   const validationErros: Errors = {};
 
   err.inner.forEach((error) => {
@@ -12,4 +12,6 @@ export default function getValidationErros(err: ValidationError): Errors {
   });
 
   return validationErros;
-}
+};
+
+export default getValidationErros;

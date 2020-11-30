@@ -47,7 +47,7 @@ const ToastProvider: React.FC = ({ children }) => {
   );
 };
 
-function useToast(): ToastContextData {
+const useToast = (): ToastContextData => {
   const context = useContext(ToastContext);
 
   if (!context) {
@@ -55,6 +55,6 @@ function useToast(): ToastContextData {
   }
 
   return context;
-}
+};
 
 export { ToastProvider, useToast };

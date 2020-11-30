@@ -13,11 +13,11 @@ export const Container = styled.div<ContainerProps>`
   align-items: center;
 
   width: 100%;
-  padding: 16px;
+  padding: 0 0.5rem;
   background: #232129;
   color: #666360;
   border-radius: 10px;
-  border: 2px solid #232129;
+  border: 1px solid #232129;
 
   & + div {
     margin-top: 8px;
@@ -47,14 +47,11 @@ export const Container = styled.div<ContainerProps>`
     border: 0;
     background: transparent;
     color: #f4ede8;
+    padding: 16px;
 
     &::placeholder {
       color: #666360;
     }
-  }
-
-  svg {
-    margin-right: 16px;
   }
 `;
 
